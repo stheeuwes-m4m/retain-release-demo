@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RetainReleaseDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOj-xc-fVC">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <state key="normal" title="Create Person"/>
+                                <connections>
+                                    <action selector="createPerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0v-xB-sDi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syD-RD-URU">
+                                <rect key="frame" x="16" y="66" width="343" height="30"/>
+                                <state key="normal" title="Create Drivers Licence"/>
+                                <connections>
+                                    <action selector="createDriversLicences:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l8L-sK-HnV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9W-91-0UC">
+                                <rect key="frame" x="16" y="104" width="343" height="30"/>
+                                <state key="normal" title="Link DL"/>
+                                <connections>
+                                    <action selector="linkDriversLicence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PpA-8y-DIg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2S-yU-1J3">
+                                <rect key="frame" x="16" y="142" width="343" height="30"/>
+                                <state key="normal" title="Link DL weak"/>
+                                <connections>
+                                    <action selector="linkDriversLicenceWeak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXw-ZY-9TP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Aw-ws-kY8">
+                                <rect key="frame" x="16" y="180" width="343" height="30"/>
+                                <state key="normal" title="Unlink DL"/>
+                                <connections>
+                                    <action selector="unlinkDriversLicence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q9f-Za-PJ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV2-WD-sYu">
+                                <rect key="frame" x="16" y="220" width="343" height="30"/>
+                                <state key="normal" title="Log People"/>
+                                <connections>
+                                    <action selector="logPeople:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wyD-7Q-hRk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEq-Nf-HoY">
+                                <rect key="frame" x="16" y="304" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cgi-5t-5C4">
+                                <rect key="frame" x="16" y="333.5" width="343" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="eOj-xc-fVC" secondAttribute="trailing" id="3Ju-cf-KSG"/>
+                            <constraint firstItem="g2S-yU-1J3" firstAttribute="top" secondItem="C9W-91-0UC" secondAttribute="bottom" constant="8" id="4w4-FN-hZY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cgi-5t-5C4" secondAttribute="trailing" id="7EG-A6-jA7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OEq-Nf-HoY" secondAttribute="trailing" id="8k2-oD-6u4"/>
+                            <constraint firstItem="eOj-xc-fVC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="28" id="9v8-so-c92"/>
+                            <constraint firstItem="JV2-WD-sYu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="D36-Mi-bJA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Aw-ws-kY8" secondAttribute="trailing" id="ENf-mv-KZ2"/>
+                            <constraint firstItem="Cgi-5t-5C4" firstAttribute="top" secondItem="OEq-Nf-HoY" secondAttribute="bottom" constant="8.5" id="NVM-6k-ZQ1"/>
+                            <constraint firstItem="C9W-91-0UC" firstAttribute="top" secondItem="syD-RD-URU" secondAttribute="bottom" constant="8" id="OBa-NN-8Ns"/>
+                            <constraint firstItem="Cgi-5t-5C4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ooz-e3-JvR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C9W-91-0UC" secondAttribute="trailing" id="PBD-DQ-WHE"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Cgi-5t-5C4" secondAttribute="bottom" id="Qpe-s1-4eX"/>
+                            <constraint firstItem="7Aw-ws-kY8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="U0L-R6-3mG"/>
+                            <constraint firstItem="g2S-yU-1J3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aJ8-DR-bBI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="OEq-Nf-HoY" secondAttribute="leading" id="eZO-78-Tgz"/>
+                            <constraint firstItem="C9W-91-0UC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g4O-J5-UsL"/>
+                            <constraint firstItem="syD-RD-URU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="j7a-Zg-DOI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="syD-RD-URU" secondAttribute="trailing" id="lbs-hR-Enj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="JV2-WD-sYu" secondAttribute="leading" id="oJo-kW-BVE"/>
+                            <constraint firstItem="syD-RD-URU" firstAttribute="top" secondItem="eOj-xc-fVC" secondAttribute="bottom" constant="8" id="q7X-ag-uMU"/>
+                            <constraint firstItem="Cgi-5t-5C4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="rQa-Nq-83s"/>
+                            <constraint firstItem="7Aw-ws-kY8" firstAttribute="top" secondItem="g2S-yU-1J3" secondAttribute="bottom" constant="8" id="sT4-T4-rkd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JV2-WD-sYu" secondAttribute="trailing" id="tLn-aE-e1k"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="eOj-xc-fVC" secondAttribute="leading" id="wBa-sJ-cuY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g2S-yU-1J3" secondAttribute="trailing" id="xZD-Rz-Hzk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonCreate" destination="eOj-xc-fVC" id="mXH-rc-QwE"/>
+                        <outlet property="textView" destination="Cgi-5t-5C4" id="Zw1-uD-I3b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
